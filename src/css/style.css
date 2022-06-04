@@ -1,0 +1,162 @@
+
+
+:root {
+    --cl-blue : #32E0C4;
+    --cl-blue-dark : #0D7377;
+
+}
+* {
+    font-family: 'Josefin Sans';
+}
+body
+{
+    width: 400px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+
+p, h1, h2 , h3 , h4 , h5 , H6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.palette {
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.palette .color{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.color span
+{
+    background-color: #00000059;
+    display: none; 
+    color: #eeeeee;   
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.color:hover span 
+{
+    display: block;
+}
+
+.btn {
+    padding: 10px;
+    background-color: var(--cl-blue);
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all ease .1s;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: var(--cl-blue-dark);
+}
+
+.top-bar {
+    display: flex;
+    border-bottom: 1pt solid #eeeeee;
+    align-items: center;
+    padding: 20px !important;
+
+}
+
+
+.top-bar .brand {
+    flex: 1;
+}
+
+.top-bar .brand h1 {
+    opacity: .6;
+}
+.top-bar .nav-items
+{
+    display: flex;
+    gap: 20px;
+}
+.nav-items  span{
+    color: black;
+    opacity: .5;
+    cursor: pointer;
+    font-size: 20px;
+}
+.body
+{
+    height : calc(600px - 120px);
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.footer {
+    
+    border-top: 1pt solid #eeeeee;
+    
+}
+
+.top-bar,.footer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+}
+
+.palettes {
+
+    padding: 10px;
+    border: 1pt solid #eeeeee;
+
+}
+
+.palettes .color-group {
+    
+    gap: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+}
+.palettes > h1 
+{
+    padding-bottom: 20px;
+}
+
+
+.msg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg h1
+{
+    color: black;
+    opacity: .5;
+}
