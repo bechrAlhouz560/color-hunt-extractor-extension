@@ -17,6 +17,9 @@ export function rgbToHex(r, g, b) {
 
 
 
+
+
+
 // checker whether the url equals the color hunt base url 
 export function checkTab (url) {
     try {
@@ -29,6 +32,7 @@ export function checkTab (url) {
 }
 // extract all the loaded pallets from the current page  
 export function extractPalletes () {
+
     // NOTE: componentToHex and rgbToHex are added to the page to be used for extraction
     function componentToHex(c) {
         var hex = c.toString(16);

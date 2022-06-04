@@ -19,6 +19,8 @@ export function QSAll(selector) {
 
 export const PalettesManager = {
 
+
+    saved : [],
     palettes: [],
     addPallete: async () => {
         let palettes = await getPalettes();
@@ -53,7 +55,12 @@ export const PalettesManager = {
             
             QS('.body').append(container);
         }
+    },
+    initPalettes : function () {
+
     }
+
+
 }
 
 
@@ -83,6 +90,12 @@ export const Router = {
             
         }
     },
+    saves : {
+        template : ``,
+        render : function () {
+
+        }
+    }, 
     navigate : (route) => {
         Router[route].render();
         Router.activeRoute = route;
